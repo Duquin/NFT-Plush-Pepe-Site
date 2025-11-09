@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Plush Pepe NFT - Золотая коллекция</title>
+	<link rel="stylesheet" href="style.css">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap"
+		rel="stylesheet">
+</head>
+
+<body>
+	<div class="container">
+		<header class="header">
+			<h1 class="logo">Plush Pepe</h1>
+			<nav class="nav">
+				<a href="#about" class="nav-link">О коллекции</a>
+				<a href="#features" class="nav-link">Особенности</a>
+				<a href="#buy" class="nav-link">Приобрести</a>
+			</nav>
+		</header>
+
+		<main class="main">
+			<section class="hero">
+				<div class="nft-card">
+					<div class="nft-image-container">
+						<img src="5224328365966298689.jpg" alt="Plush Pepe NFT" class="nft-image" id="nftImage">
+						<div class="limited-badge">LIMITED EDITION</div>
+					</div>
+					<div class="nft-info">
+						<h2 class="nft-title">Plush Pepe</h2>
+						<div class="nft-meta">
+							<div class="creator">
+								<span class="meta-label">Создатель:</span>
+								<span class="meta-value">Duquin</span>
+							</div>
+							<div class="edition">
+								<span class="meta-label">Тираж:</span>
+								<span class="meta-value">$1B</span>
+							</div>
+						</div>
+						<div class="price-section">
+							<div class="price">0.5 ETH</div>
+							<div class="timer" id="countdown">24:00:00</div>
+						</div>
+						<button class="buy-button" id="buyButton">Приобрести NFT</button>
+					</div>
+				</div>
+			</section>
+
+			<section class="about" id="about">
+				<h2 class="section-title">Эксклюзивная коллекция</h2>
+				<p class="about-text">
+					Plush Pepe - это уникальный NFT в золотом стиле, созданный художником Duquin.
+					Каждый токен представляет собой цифровое произведение искусства с ограниченным тиражом.
+				</p>
+			</section>
+
+			<section class="features" id="features">
+				<h2 class="section-title">Особенности</h2>
+				<div class="features-grid">
+					<div class="feature-card">
+						<div class="feature-icon">🎨</div>
+						<h3>Уникальный дизайн</h3>
+						<p>Эксклюзивный золотой стиль ручной работы</p>
+					</div>
+					<div class="feature-card">
+						<div class="feature-icon">🔒</div>
+						<h3>Безопасность</h3>
+						<p>Полная проверка подлинности на блокчейне</p>
+					</div>
+					<div class="feature-card">
+						<div class="feature-icon">⭐</div>
+						<h3>Редкость</h3>
+						<p>Ограниченный тираж всего 1B экземпляров</p>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<p>&copy; 2024 Plush Pepe NFT Collection. Все права защищены.</p>
+		</footer>
+	</div>
+
+	<div class="modal" id="purchaseModal">
+		<div class="modal-content">
+			<span class="close-button" id="closeModal">&times;</span>
+			<h2>Приобретение Plush Pepe NFT</h2>
+			<p>Подключите ваш кошелек для завершения покупки.</p>
+			<button class="connect-wallet-button">Подключить кошелек</button>
+		</div>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+
+</html>
